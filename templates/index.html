@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block about %} 
+<section class="content about">
+    <h1>Hi there.</h1>
+    <div class="card">
+        <p>
+            I&rsquo;m Kevin, and I am a person living in Austin Texas.
+            I like making odd things to share with my friends, and this is a place
+            for sharing those things. During the day, I work on seller tools at 
+            <a target="bc_" href="https://bandcamp.com">Bandcamp</a> and the rest of the time, I futz around with music 
+            and I read some books. I make games sometimes. I'm trying to think of this as a &ldquo;notebook&rdquo; rather than a very public place.
+        </p>
+    </div>
+</section>
+{% endblock about %}
+{% block content %}
+{% for p in section.pages %}
+    <h2><a href="{{p.permalink}}">{{ p.title }}</a> 
+        <a class="aside" href="{{p.extra["try_url"]}}">(play)</a>
+        <a class="aside" href="{{p.extra["info_url"]}}">(info)</a>
+    </h2>
+    <div class="page-content">
+        {{p.summary | safe}}
+    </div>
+{% endfor %}
+{% endblock content %}

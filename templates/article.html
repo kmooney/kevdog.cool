@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block about %}
+{% endblock %} 
+
+{% block content %} 
+<h1>{{page.title}}</h1>
+{{ page.summary|safe }}
+<a href="/projects">(projects)</a>
+{% endblock %}
