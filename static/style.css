@@ -36,7 +36,7 @@ body {
 }
 
 body.dark {
-    background-color: hsl(var(--texthue), 15%, 10%);
+    background-color: hsl(var(--texthue), 25%, 10%);
 }
 
 section {
