@@ -1,0 +1,68 @@
+body {
+
+}
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.copier {
+	position: relative;
+	float: left;
+	clear: left;
+	border: none;
+	transition: background-color 0.2s ease;	
+	margin: 10px;
+} 
+
+.wrap {
+	position: fixed;
+}
+
+.inner {
+	position: fixed;
+}
+
+.grabber {
+	cursor: crosshair;
+	float:  right;
+	padding: 0;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: none;
+}
+
+.grabber::before {
+	content: "\01F4CB";
+}
+
+.grabber.show {
+	display: block;
+}
+
+.highlighted {
+	background-color: lightyellow;
+}
+
+.lasso {
+	position: absolute;
+	background: none;
+	border: 1px dashed gray;
+	display: block;
+	cursor:  crosshair;
+}
+
+label { 
+
+	font-size: 1.0em;
+ }
+
+input {
+	font: inherit;
+	background:  inherit;
+	border:  1px solid gray;
+	padding:  .5em;
+	margin-left: 20px;
+}
