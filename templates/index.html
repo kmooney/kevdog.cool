@@ -14,3 +14,13 @@
     </div>
 </section>
 {% endblock about %}
+
+{% block content %}
+    {% for note in section.pages %}
+        <div class="card">
+            <h2><a href="{{ note.path }}">{{ note.title }}</a></h2>
+            <p>📆 <span class="fancy">{{ note.date }}</span></p>
+            <p>{{ note.content|safe }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
