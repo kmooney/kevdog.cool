@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="/style.css">
         <link rel="icon" href="/pics/kevin-favicon.gif">
         <script src="/fancy.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTCRBYHZGQ"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -21,16 +20,15 @@
     <section class="menu">
         <ul>
             <li><a href="/">kevdog.cool</a></li>
-            <li><a href="/projects">projects</a></li>
+            <li><a href="/notes">notes</a></li>
             <li><a target="o" href="https://github.com/kmooney">github</a></li>
             <li> <a href="#" class="darkmode">dark mode?</a></li>
             <li><a href="#" class="funmode">fun mode?</a></li>
-            <li><span class="fancy">kevin@kevdog.cool</span></li>
         </ul>
     </section>
-    <div class="words">
+    <div class="posts">
         {% block about %} {% endblock about %}
-        <section class="content projects">
+        <section class="content posts">
            {% block content %} {% endblock content %}
         </section>
     </div>

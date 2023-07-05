@@ -2,7 +2,7 @@
 
 {% block about %} 
 <section class="content about">
-    <h1>Hi there.</h1>
+    <h1>Hi. I'm Kevin</h1>
     <div class="card">
         <p>
             I&rsquo;m Kevin, and I am a person living in Austin Texas.
@@ -14,16 +14,3 @@
     </div>
 </section>
 {% endblock about %}
-
-{% block content %}
-{% for p in section.pages %}
-    <h2>
-        <a href="{{p.permalink}}">{{ p.title }}</a> 
-        <a class="aside" href="{{p.extra["try_url"]}}">(play)</a>
-        <a class="aside" href="{{p.extra["info_url"]}}">(info)</a>
-    </h2>
-    <div class="page-content">
-        {{p.summary | safe}}
-    </div>
-{% endfor %}
-{% endblock content %}
