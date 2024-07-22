@@ -25,13 +25,14 @@ html {
 
 body {
     background-color: hsl(var(--texthue), 30%, 90%);
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 
 div.posts {
     width: 80%;
     margin-left: auto; margin-right:auto;
 }
+
 
 
 @media screen 
@@ -43,9 +44,6 @@ div.posts {
         font-size: 2.4em;
     }
 
-    h1 {
-        font-size: 4em;
-    }
     div.posts {
         width: 95%;
     }
@@ -167,7 +165,7 @@ div.words {
     align-items:top;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1650px) {
     div.words {
         flex-direction: column;
     }
@@ -176,17 +174,29 @@ div.words {
         margin: 0 10px 0 10px;
     }
     h1 {
-        font-size: 5em;
+        font-size: 7em;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     h1 {
         font-size: 5em;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1250px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 850px) {
     h1 {
         font-size: 3em;
     }
@@ -195,6 +205,13 @@ div.words {
 @media (max-width: 700px) {
     h1 {
         font-size: 2.5em;
+    }
+}
+
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2em;
     }
 }
 
@@ -233,4 +250,3 @@ div.photo {
     text-align:center;
     border: 1px solid hsl(var(--texthue), 100%, 10%);
 }
-
