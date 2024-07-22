@@ -1,0 +1,8 @@
+services:
+  zola:
+    build: .
+    volumes:
+      - .:/site
+    ports:
+      - "1111:1111"
+    command: ["zola", "serve", "--port", "1111", "--interface", "0.0.0.0"]
