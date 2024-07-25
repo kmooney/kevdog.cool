@@ -106,6 +106,8 @@ h1, h2, h3 {
 div.card {
     break-inside: avoid;
     page-break-inside: avoid;
+    float: left;
+    clear: left;
 }
 
 h1 {
@@ -156,6 +158,11 @@ img {
     display: block;
     padding: 5px;
     width: 3em;
+}
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 div.words {
