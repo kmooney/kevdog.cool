@@ -9,11 +9,11 @@
             funMode = !funMode;
             if (funMode) {
                 timer = fun_mode();
-                localEl.text="fun mode!";
+                localEl.text="✨ fun mode!";
             }
             if (!funMode) {
                 window.clearInterval(timer);
-                localEl.text="fun mode?";
+                localEl.text="✨ fun mode?";
             }
             localStorage.setItem('funMode', funMode);
             e.preventDefault();
@@ -22,10 +22,10 @@
 
         // init 
         if (funMode) {
-            localEl.text = "fun mode!";
+            localEl.text = "✨ fun mode!";
             timer = fun_mode();
         } else {
-            localEl.text = "fun mode?";
+            localEl.text = "✨ fun mode?";
         }
     }
 
@@ -36,11 +36,11 @@
             darkMode = !darkMode;
             if (darkMode) {
                 document.getElementsByTagName("body")[0].classList.add("dark");
-                de.text="dark mode!";
+                de.text="🌠 dark mode!";
             }
             if (!darkMode) {
                 document.getElementsByTagName("body")[0].classList.remove("dark");
-                de.text="dark mode?";
+                de.text="🌠 dark mode?";
             }
             localStorage.setItem('darkMode', darkMode);
             e.preventDefault();
@@ -48,12 +48,12 @@
         });
 
         // init
-        console.log("dark mode", darkMode);
+        console.log("🌠 dark mode", darkMode);
         if (darkMode) {
-            de.text = "dark mode!";
+            de.text = "🌠 dark mode!";
             document.getElementsByTagName("body")[0].classList.add("dark");
         } else {
-            de.text = "dark mode?";
+            de.text = "🌠 dark mode?";
         }
     }
 }();
