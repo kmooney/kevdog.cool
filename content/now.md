@@ -21,3 +21,5 @@ Here are some pics of when we were setting up the store about a year ago, includ
 ![pic](/pics/now/7.jpeg)
 ![pic](/pics/now/8.jpeg)
 ![pic](/pics/now/9.jpeg)
+
+<!-- more -->
