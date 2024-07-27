@@ -29,7 +29,7 @@ body {
 }
 
 div.posts {
-    width: 80%;
+    width: 97%;
     margin-left: auto; margin-right:auto;
 }
 
@@ -45,7 +45,7 @@ div.posts {
     }
 
     div.posts {
-        width: 75%;
+        max-width: 750px;
     }
 }
 
